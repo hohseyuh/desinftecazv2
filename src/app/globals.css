@@ -110,3 +110,27 @@ body {
   color: var(--white);
   opacity: 0.5;
 }
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+}

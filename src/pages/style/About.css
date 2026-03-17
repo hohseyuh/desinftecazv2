@@ -100,3 +100,17 @@
         clip-path: inset(0 0 0 0);
     }
 }
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .About-us {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .About-us {
+        padding: 60px 20px;
+    }
+}

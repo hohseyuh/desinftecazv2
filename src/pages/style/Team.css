@@ -78,3 +78,16 @@
         aspect-ratio: 16/9;
     }
 }
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .Team {
+        padding: clamp(3rem, 6vw, 5rem) 20px;
+    }
+
+    .team-brief-title {
+        font-size: 28px;
+        letter-spacing: -1.12px;
+    }
+}

@@ -94,9 +94,19 @@
 @media (max-width: 768px) {
     .allies-track {
         gap: 4rem;
+        padding-right: 4rem;
     }
 
     .ally-logo {
         height: 32px;
+    }
+
+    .Allies {
+        padding: 60px 0;
+        gap: 40px;
+    }
+
+    .allies-viewport {
+        padding: 1.5rem 0;
     }
 }

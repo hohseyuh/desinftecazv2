@@ -79,17 +79,42 @@
     .Services {
         padding: 80px 40px;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
         gap: 80px;
     }
-    
+
     .service-title {
         font-size: 36px;
     }
-    
+
     .service-body {
         font-size: 18px;
+    }
+}
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .Services {
+        padding: 60px 20px;
+    }
+
+    .services-inner {
+        gap: 40px;
+    }
+
+    .services-grid {
+        gap: 40px;
+    }
+
+    .service-title {
+        font-size: 28px;
+        letter-spacing: -1.12px;
+    }
+
+    .service-body {
+        font-size: 16px;
     }
 }

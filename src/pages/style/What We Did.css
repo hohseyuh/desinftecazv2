@@ -166,17 +166,49 @@
         align-items: flex-start;
         gap: 40px;
     }
-    
+
     .wwdid-text-content {
         width: 100%;
     }
-    
+
     .wwdid-visual {
         width: 100%;
         max-width: 500px;
     }
-    
+
     .wwdid:hover .wwdid-title-content {
         transform: translateY(-20px) translateX(20px);
+    }
+}
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .What-We-Did {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .What-We-Did {
+        padding: 60px 20px;
+    }
+
+    .wwdid-container {
+        gap: 48px;
+    }
+
+    .wwdids {
+        gap: 48px;
+    }
+
+    .wwdid-title-content {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    .wwdid-visual {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
     }
 }

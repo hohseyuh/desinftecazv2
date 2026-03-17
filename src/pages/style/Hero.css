@@ -129,3 +129,50 @@
 
     /* or use a specific character width, e.g., 42ch */
 }
+
+/* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .hero-text {
+        padding: 80px 40px;
+    }
+
+    .hero-stage {
+        padding: 0 40px;
+        gap: 32px;
+    }
+
+    .video {
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        width: 100%;
+    }
+
+    .hero-text {
+        padding: 80px 20px 40px;
+        min-height: auto;
+    }
+
+    .hero-text-content {
+        width: 100%;
+        font-size: clamp(32px, 8vw, 48px);
+        text-align: left;
+        letter-spacing: -1.28px;
+    }
+
+    .hero-stage {
+        flex-direction: column;
+        padding: 0 20px 40px;
+        gap: 24px;
+    }
+
+    .video {
+        height: auto;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}
