@@ -1,7 +1,7 @@
 .Team {
     width: 90%;
     margin: 0 auto;
-    padding: clamp(6rem, 10vw, 12rem) 100px;
+    padding: clamp(4rem, 7vw, 8rem) 60px;
     color: var(--white);
     background: var(--black);
     display: flex;
@@ -53,10 +53,10 @@
 .team-brief-title {
     color: var(--white);
     font-family: var(--font-text);
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -1.92px;
+    letter-spacing: -1.44px;
 }
 
 .team-brief p {

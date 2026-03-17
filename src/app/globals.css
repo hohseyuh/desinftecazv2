@@ -52,10 +52,10 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1800px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* Custom Scrollbar */
@@ -103,10 +103,10 @@ body {
 
 .section-title {
   font-family: var(--font-text);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: -1.44px;
+  letter-spacing: -1.12px;
   color: var(--white);
   opacity: 0.5;
 }

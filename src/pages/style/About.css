@@ -1,7 +1,7 @@
 .About-us {
     display: flex;
     flex-direction: column;
-    padding: 120px 100px;
+    padding: 80px 60px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -15,12 +15,11 @@
     color: #F2F2F2;
     text-align: center;
     font-family: var(--font-text);
-    font-size: 64px;
+    font-size: clamp(36px, 4vw, 54px);
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    /* 64px */
-    letter-spacing: -2.56px;
+    letter-spacing: -2.16px;
 
     /* Optional: Offset each line slightly */
     .scroll-line:nth-child(2) {
@@ -51,11 +50,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--font-text);
-    font-size: 64px;
+    font-size: clamp(36px, 4vw, 54px);
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    letter-spacing: -2.56px;
+    letter-spacing: -2.16px;
 }
 
 .scroll {

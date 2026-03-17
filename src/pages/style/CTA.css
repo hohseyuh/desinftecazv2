@@ -1,7 +1,7 @@
 .CTA-Section {
     width: 90%;
     margin: 0 auto;
-    padding: clamp(4rem, 8vw, 10rem) 100px;
+    padding: clamp(3rem, 6vw, 7rem) 60px;
     background: var(--black);
 }
 
