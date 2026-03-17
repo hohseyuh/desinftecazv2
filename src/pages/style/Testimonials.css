@@ -153,23 +153,6 @@
         padding-right: 20px;
     }
 
-    /* Reset hover animations */
-    .testimonials__card:hover {
-        background: #111;
-    }
-
-    .testimonials__card:hover .card-quote-wrapper {
-        transform: none;
-    }
-
-    .testimonials__card:hover .card-quote-text {
-        color: rgba(242, 242, 242, 0.4);
-    }
-
-    .testimonials__card:hover .card-author-info {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 }
 
 @media (max-width: 480px) {

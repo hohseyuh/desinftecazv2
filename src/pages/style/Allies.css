@@ -110,10 +110,4 @@
         padding: 1.5rem 0;
     }
 
-    /* Reset hover animations */
-    .ally-item:hover {
-        filter: brightness(0) invert(1);
-        opacity: 0.3;
-        transform: none;
-    }
 }
