@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Otogo",
+    "about": "Otomatik texniki baxış təsviri və avtomobil xidmətləri üçün platforma. İstifadəçilərin rahatlığı üçün tam rəqəmsallaşdırılmış servis.",
+    "icon": "/otogo arrow.svg",
+    "video": "/videos/otogo.mp4",
+    "url": "https://otogo.az"
+  },
+  {
+    "id": "2",
+    "name": "Rosetta",
+    "about": "Dil öyrənmə və tərcümə xidmətləri üçün innovativ rəqəmsal həll. Süni intellekt əsaslı öyrənmə sistemi ilə fərqlənir.",
+    "icon": "/rosetta.svg",
+    "video": "/videos/rosetta.mp4",
+    "url": "https://rosetta.az"
+  }
+]

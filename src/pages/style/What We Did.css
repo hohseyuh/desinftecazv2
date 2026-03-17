@@ -35,6 +35,8 @@
     cursor: pointer;
     position: relative;
     padding: 20px 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .wwdid-text-content {
@@ -210,5 +212,9 @@
         height: auto;
         aspect-ratio: 16 / 9;
         max-width: 100%;
+    }
+
+    .wwdid-icon-wrapper {
+        display: none;
     }
 }

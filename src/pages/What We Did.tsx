@@ -2,23 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import "./style/What We Did.css";
-
-const projects = [
-    {
-        id: "1",
-        name: "Otogo",
-        about: "Otomatik texniki baxış təsviri və avtomobil xidmətləri üçün platforma. İstifadəçilərin rahatlığı üçün tam rəqəmsallaşdırılmış servis.",
-        icon: "/otogo arrow.svg",
-        video: "/videos/otogo.mp4" // Dedicated project video
-    },
-    {
-        id: "2",
-        name: "Rosetta",
-        about: "Dil öyrənmə və tərcümə xidmətləri üçün innovativ rəqəmsal həll. Süni intellekt əsaslı öyrənmə sistemi ilə fərqlənir.",
-        icon: "/rosetta.svg",
-        video: "/videos/rosetta.mp4" // Dedicated project video
-    }
-];
+import projects from "../data/projects.json";
 
 function TypewriterText({ text, speed = 80, delay = 500 }: { text: string, speed?: number, delay?: number }) {
     const [displayed, setDisplayed] = useState("");
@@ -70,7 +54,13 @@ export default function WhatWeDid() {
                 </div>
                 <div className="wwdids">
                     {projects.map((project) => (
-                        <div key={project.id} className="wwdid">
+                        <a
+                            key={project.id}
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="wwdid"
+                        >
                             <div className="wwdid-text-content">
                                 <p className="wwdid-about">{project.about}</p>
                                 <p className="wwdid-order">D/ {project.id}</p>
@@ -80,12 +70,12 @@ export default function WhatWeDid() {
                                     <img src={project.icon} alt="" className="wwdid-icon" />
                                 </div>
                                 <div className="wwdid-video-wrapper">
-                                    <video 
-                                        src={project.video} 
-                                        autoPlay 
-                                        muted 
-                                        loop 
-                                        playsInline 
+                                    <video
+                                        src={project.video}
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
                                         className="wwdid-video"
                                     />
                                 </div>
@@ -95,7 +85,7 @@ export default function WhatWeDid() {
                                     <TypewriterText text={project.name} />
                                 </h3>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
