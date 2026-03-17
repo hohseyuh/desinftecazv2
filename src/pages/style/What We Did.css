@@ -204,10 +204,6 @@
         gap: 48px;
     }
 
-    .wwdid-title-content {
-        font-size: clamp(32px, 8vw, 48px);
-    }
-
     .wwdid-visual {
         height: auto;
         aspect-ratio: 16 / 9;
