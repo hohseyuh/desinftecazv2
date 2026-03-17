@@ -17,10 +17,6 @@
 /.next/
 /out/
 
-#video
-/public/videos/otogo.mp4
-/public/videos/rosetta.mp4
-
 # production
 /build
 
