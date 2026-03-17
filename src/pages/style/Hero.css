@@ -170,9 +170,7 @@
         gap: 24px;
     }
 
-    .video {
-        height: auto;
-        width: 100%;
-        aspect-ratio: 16 / 9;
+    .hero-stage {
+        display: none;
     }
 }

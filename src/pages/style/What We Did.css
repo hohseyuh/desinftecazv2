@@ -213,4 +213,22 @@
     .wwdid-icon-wrapper {
         display: none;
     }
+
+    .wwdid-video-wrapper {
+        display: none;
+    }
+
+    /* Reset hover animations */
+    .wwdid:hover .wwdid-about {
+        color: rgba(242, 242, 242, 0.6);
+    }
+
+    .wwdid:hover .wwdid-title-content {
+        transform: none;
+    }
+
+    .wwdid:hover .wwdid-icon-wrapper {
+        opacity: 0;
+        transform: none;
+    }
 }

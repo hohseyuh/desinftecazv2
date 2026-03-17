@@ -139,4 +139,9 @@
     .cta-actions {
         flex-direction: column;
     }
+
+    /* Reset hover animations */
+    .cta-primary-btn:hover {
+        transform: none;
+    }
 }
