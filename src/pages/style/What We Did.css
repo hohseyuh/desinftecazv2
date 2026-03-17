@@ -214,12 +214,21 @@
         display: none;
     }
 
-    /* Reset hover animations */
+    /* Reset hover, use :active for press feedback instead */
     .wwdid:hover .wwdid-about {
         color: rgba(242, 242, 242, 0.6);
     }
 
     .wwdid:hover .wwdid-title-content {
         transform: none;
+    }
+
+    .wwdid:active .wwdid-about {
+        color: var(--white);
+    }
+
+    .wwdid:active .wwdid-title-content {
+        transform: translateX(20px);
+        color: var(--white);
     }
 }
