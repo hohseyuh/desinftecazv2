@@ -1,0 +1,103 @@
+.About-us {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-us {
+    flex: 1 0 0;
+
+    color: #F2F2F2;
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 64px */
+    letter-spacing: -2.56px;
+
+    /* Optional: Offset each line slightly */
+    .scroll-line:nth-child(2) {
+        animation-delay: 10s;
+    }
+
+    .scroll-line:nth-child(3) {
+        animation-delay: 10s;
+    }
+}
+
+.about-us-cont {
+    flex: 1 0 0;
+
+    color: #F2F2F2;
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 64px */
+    letter-spacing: -2.56px;
+
+    opacity: 0.9;
+    background: linear-gradient(101deg, #959595 33.84%, #5E5E5E 66.16%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-text);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -2.56px;
+}
+
+.scroll {
+    /* Initial state (off-screen or hidden) is defined in the keyframes */
+    animation: slideIn 10s ease-out forwards;
+    /* This property links the animation to the element's visibility on scroll */
+    animation-timeline: view();
+
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        /* Starts 20px below its final position */
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Ends at its original position */
+    }
+}
+
+.reveal-text {
+    /* 1. Setup - keeps text invisible until scrolled */
+    clip-path: inset(0 100% 0 0);
+
+    /* 2. Bind to Scroll */
+    animation: reveal-snap linear both;
+    animation-timeline: view();
+
+    /* 3. Timing: Starts when 10% in, finishes by 30% */
+    animation-range: entry 10% entry 30%;
+}
+
+@keyframes reveal-snap {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}

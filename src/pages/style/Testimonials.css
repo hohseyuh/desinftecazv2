@@ -1,0 +1,150 @@
+.testimonials {
+    width: 90%;
+    margin: 0 auto;
+    padding: clamp(6rem, 10vw, 12rem) 100px;
+    background: var(--black);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials__viewport {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonials__track {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+    will-change: transform;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Corrected for doubled data: shift by exactly half the track and account for half-gap */
+        transform: translateX(calc(-50% - 1rem));
+    }
+}
+
+.testimonials__card {
+    flex: 0 0 380px;
+    height: 480px;
+    position: relative;
+    /* Dark gray background as requested, matching established project container colors */
+    background: #111;
+    border: none;
+    /* Dog-ear clipped corner top right */
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.card-inner {
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    margin-bottom: 2rem;
+}
+
+.card-company-name {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    text-transform: uppercase;
+    max-width: 90%;
+}
+
+.card-content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.card-quote-wrapper {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-quote-text {
+    font-family: var(--font-text);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: rgba(242, 242, 242, 0.4);
+    transition: color 0.4s ease;
+}
+
+.card-author-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-author-name {
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card-author-role {
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    color: rgba(242, 242, 242, 0.5);
+}
+
+/* Hover States matching the Palantir style */
+.testimonials__card:hover {
+    background: #222;
+    /* Subtle lighten on hover */
+}
+
+.testimonials__card:hover .card-quote-wrapper {
+    transform: translateY(-80px);
+}
+
+.testimonials__card:hover .card-quote-text {
+    color: var(--white);
+}
+
+.testimonials__card:hover .card-author-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .testimonials__card {
+        flex: 0 0 320px;
+        height: 420px;
+    }
+
+    .card-company-name {
+        font-size: 1.25rem;
+    }
+
+    .card-quote-text {
+        font-size: 1rem;
+    }
+}
