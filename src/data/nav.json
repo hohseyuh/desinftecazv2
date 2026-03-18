@@ -1,0 +1,17 @@
+{
+  "links": [
+    { "name": "ANA SƏHİFƏ",  "href": "#hero" },
+    { "name": "HAQQIMIZDA",  "href": "#about" },
+    { "name": "XİDMƏTLƏR",  "href": "#services" },
+    { "name": "PROYEKTLƏR",  "href": "#projects" },
+    { "name": "KOMANDA",     "href": "#team" },
+    { "name": "ƏLAQƏ",       "href": "#contact" }
+  ],
+  "socials": [
+    { "name": "INSTAGRAM", "href": "https://instagram.com/desinftec" },
+    { "name": "LINKEDIN",  "href": "https://www.linkedin.com/company/desinftec" }
+  ],
+  "ctaEmail": "mailto:info@desinftec.az",
+  "ctaLabel": "Əlaqə",
+  "copyright": "© 2026 DESINFTEC. BÜTÜN HÜQUQLAR QORUNUR."
+}

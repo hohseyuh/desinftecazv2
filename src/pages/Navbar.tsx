@@ -2,20 +2,12 @@
 
 import { useState } from "react";
 import "./style/Navbar.css";
+import navData from "../data/nav.json";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-    const navLinks = [
-        { name: "ANA SƏHİFƏ", href: "#hero" },
-        { name: "HAQQIMIZDA", href: "#about" },
-        { name: "XİDMƏTLƏR", href: "#services" },
-        { name: "PROYEKTLƏR", href: "#projects" },
-        { name: "KOMANDA", href: "#team" },
-        { name: "ƏLAQƏ", href: "#contact" }
-    ];
 
     return (
         <>
@@ -25,7 +17,7 @@ export default function Navbar() {
                         D/
                     </div>
                     <div className="navbar__cta">
-                        <a href="mailto:info@desinftec.az" className="btn-primary">Əlaqə</a>
+                        <a href={navData.ctaEmail} className="btn-primary">{navData.ctaLabel}</a>
                         <button
                             className={`btn-secondary ${isMenuOpen ? 'active' : ''}`}
                             onClick={toggleMenu}
@@ -45,7 +37,7 @@ export default function Navbar() {
                 <div className="nav-content container">
                     <div className="nav-grid">
                         <div className="nav-main">
-                            {navLinks.map((link, index) => (
+                            {navData.links.map((link, index) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
@@ -60,10 +52,11 @@ export default function Navbar() {
                         </div>
                         <div className="nav-footer">
                             <div className="nav-socials">
-                                <a href="https://instagram.com/desinftec">INSTAGRAM</a>
-                                <a href="https://www.linkedin.com/company/desinftec">LINKEDIN</a>
+                                {navData.socials.map((s) => (
+                                    <a key={s.name} href={s.href}>{s.name}</a>
+                                ))}
                             </div>
-                            <p className="nav-copyright">© 2026 DESINFTEC. BÜTÜN HÜQUQLAR QORUNUR.</p>
+                            <p className="nav-copyright">{navData.copyright}</p>
                         </div>
                     </div>
                 </div>

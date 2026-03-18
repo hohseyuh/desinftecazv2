@@ -1,0 +1,7 @@
+{
+  "title": "Növbəti böyük layihənizi",
+  "titleAccent": "birlikdə yaradaq.",
+  "description": "İdeyanızı real, işlək və gözəl rəqəmsal məhsula çevirmək üçün bizə yazın. Komandamız 24 saat ərzində sizinlə əlaqə saxlayacaq.",
+  "primaryBtn":   { "label": "Layihəyə başla",    "icon": "→", "href": "mailto:info@desinftec.az" },
+  "secondaryBtn": { "label": "Pulsuz məsləhət al",             "href": "mailto:info@desinftec.az" }
+}

@@ -1,6 +1,7 @@
 'use client'
 
 import "./style/CTA.css";
+import ctaData from "../data/cta.json";
 
 export default function CTA() {
     return (
@@ -8,25 +9,22 @@ export default function CTA() {
             <div className="cta-card">
                 <div className="cta-content">
                     <h2 className="cta-title">
-                        Növbəti böyük layihənizi <br />
-                        <span className="accent">birlikdə yaradaq.</span>
+                        {ctaData.title} <br />
+                        <span className="accent">{ctaData.titleAccent}</span>
                     </h2>
-                    <p className="cta-desc">
-                        İdeyanızı real, işlək və gözəl rəqəmsal məhsula çevirmək üçün bizə yazın. 
-                        Komandamız 24 saat ərzində sizinlə əlaqə saxlayacaq.
-                    </p>
-                    
+                    <p className="cta-desc">{ctaData.description}</p>
+
                     <div className="cta-actions">
-                        <a href="mailto:info@desinftec.az" className="cta-primary-btn">
-                            Layihəyə başla
-                            <span className="btn-icon">→</span>
+                        <a href={ctaData.primaryBtn.href} className="cta-primary-btn">
+                            {ctaData.primaryBtn.label}
+                            <span className="btn-icon">{ctaData.primaryBtn.icon}</span>
                         </a>
-                        <a href="mailto:info@desinftec.az" className="cta-secondary-btn">
-                            Pulsuz məsləhət al
+                        <a href={ctaData.secondaryBtn.href} className="cta-secondary-btn">
+                            {ctaData.secondaryBtn.label}
                         </a>
                     </div>
                 </div>
-                
+
                 <div className="cta-visual">
                     <div className="glow-circle"></div>
                 </div>

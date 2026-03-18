@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Veb Applikasiya",
+    "description": "Veb Tətbiq Mühəndisliyi, mürəkkəb əməliyyat problemlərini həll etmək üçün qurulmuş dayanıqlı, miqyaslana bilən və interaktiv proqram təminatının yaradılmasıdır. Biz bütün müasir mühitlərdə qüsursuz və maneəsiz icranı zəmanət altına alan təmiz, yüksək performanslı kod yazmağa köklənmişik.",
+    "icon": "wwd4.svg"
+  },
+  {
+    "title": "Mobil Applikasiya",
+    "description": "Mobil Tətbiq Mühəndisliyi, yüksək performans və istifadəçilərin aqressiv şəkildə platformada saxlanılması üçün xüsusi olaraq qurulmuş doğma (native) və kross-platforma təcrübələrinin yaradılmasıdır. Biz maksimum dəyəri maneəsiz şəkildə təqdim etmək üçün cihazın əsas imkanlarından tam gücü ilə istifadə edən intuitiv, dayanıqlı mobil arxitekturalar qururuq.",
+    "icon": "wwd3.svg"
+  },
+  {
+    "title": "UI/UX Prototipinq",
+    "description": "UI/UX Prototipləşdirmə, istifadəçi səyahətlərinin və vizual interfeyslərin strateji arxitekturasıdır. Biz yüksək dəqiqlikli, interaktiv planlar (blueprints) mühəndisləşdirərək davranış psixologiyası ilə xalis texniki icra arasındakı boşluğu aradan qaldırırıq. Tək bir sətir kod yazılmadan öncə rəqəmsal məhsulun dəqiq görünüşünü, hissiyatını və funksionallığını müəyyən edirik.",
+    "icon": "wwd2.svg"
+  },
+  {
+    "title": "Brendinq",
+    "description": "Brendin Vizual Kimliyi, şirkətin vizual dilinin sistematik mühəndisliyidir. Biz mütləq nüfuz və aqressiv bazar mövqeyini nümayiş etdirən çarpıcı, yüksək təsir gücünə malik estetikalar – sərt tipoqrafik iyerarxiyalardan tutmuş dominant rəng palitralarına və rəqəmsal aktivlərə qədər – qururuq.",
+    "icon": "wwd1.svg"
+  }
+]

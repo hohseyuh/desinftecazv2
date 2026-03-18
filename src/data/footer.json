@@ -1,0 +1,34 @@
+{
+  "logo": "DES/NFTEC",
+  "tagline": "Mükəmməl rəqəmsal həllər üçün sizin etibarlı tərəfdaşınız.",
+  "nav": [
+    {
+      "heading": "NAVİQASİYA",
+      "links": [
+        { "label": "Ana Səhifə",  "href": "#hero" },
+        { "label": "Haqqımızda", "href": "#about" },
+        { "label": "Xidmətlər",  "href": "#services" },
+        { "label": "İşlərimiz",  "href": "#projects" },
+        { "label": "Komanda",    "href": "#team" },
+        { "label": "Əlaqə",      "href": "#contact" }
+      ]
+    },
+    {
+      "heading": "SOSİAL MEDİA",
+      "links": [
+        { "label": "Instagram", "href": "https://instagram.com/desinftec" },
+        { "label": "LinkedIn",  "href": "https://www.linkedin.com/company/desinftec" }
+      ]
+    },
+    {
+      "heading": "LEGAL",
+      "links": [
+        { "label": "Gizlilik siyasəti", "href": "#" },
+        { "label": "İstifadə şərtləri", "href": "#" }
+      ]
+    }
+  ],
+  "contact": "info@desinftec.az",
+  "location": "Bakı, Azərbaycan",
+  "signature": "D/"
+}
