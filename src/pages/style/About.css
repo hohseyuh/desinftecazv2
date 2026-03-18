@@ -18,17 +18,30 @@
     font-size: clamp(36px, 4vw, 54px);
     font-style: normal;
     font-weight: 500;
-    line-height: 100%;
+    line-height: 1.15;
     letter-spacing: -2.16px;
 
-    /* Optional: Offset each line slightly */
-    .scroll-line:nth-child(2) {
-        animation-delay: 10s;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
 
-    .scroll-line:nth-child(3) {
-        animation-delay: 10s;
-    }
+.about-line {
+    display: block;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.About-us.is-visible .about-line:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0s; }
+.About-us.is-visible .about-line:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+.About-us.is-visible .about-line:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+.About-us.is-visible .about-line:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
+
+.about-typewriter {
+    position: relative;
+    display: inline-block;
 }
 
 .about-us-cont {
@@ -43,6 +56,7 @@
     line-height: 100%;
     /* 64px */
     letter-spacing: -2.56px;
+
 
     opacity: 0.9;
     background: linear-gradient(101deg, #959595 33.84%, #5E5E5E 66.16%);
