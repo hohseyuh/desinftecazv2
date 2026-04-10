@@ -1,8 +1,5 @@
 {
   "framework": "nextjs"
-}
-
-{
   "redirects": [
     {
       "source": "/kur",
