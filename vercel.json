@@ -1,10 +1,3 @@
 {
   "framework": "nextjs"
-  "redirects": [
-    {
-      "source": "/kur",
-      "destination": "https://drive.google.com/drive/folders/17TfpskOvoC72RQOdNqErDNqDaUDxMuw8",
-      "permanent": false
-    }
-  ]
 }
