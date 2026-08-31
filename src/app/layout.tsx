@@ -18,9 +18,9 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Desinftec | Rəqəmsal Həllər",
+  title: "Desinftec | Design & Software Development",
   description:
-    "Desinftec — Bakıda fəaliyyət göstərən, veb və mobil tətbiqlər, UI/UX prototipləşdirmə və brendinq üzrə ixtisaslaşan rəqəmsal həllər komandasıdır.",
+    "Bakıda veb sayt, mobil tətbiq, UI/UX və brend dizaynı. Desinftec brendinizin rəqəmsal ehtiyacları üçün vahid komanda.",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
