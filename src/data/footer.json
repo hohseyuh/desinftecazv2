@@ -19,13 +19,6 @@
         { "label": "Instagram", "href": "https://instagram.com/desinftec" },
         { "label": "LinkedIn",  "href": "https://www.linkedin.com/company/desinftec" }
       ]
-    },
-    {
-      "heading": "LEGAL",
-      "links": [
-        { "label": "Gizlilik siyasəti", "href": "#" },
-        { "label": "İstifadə şərtləri", "href": "#" }
-      ]
     }
   ],
   "contact": "info@desinftec.az",

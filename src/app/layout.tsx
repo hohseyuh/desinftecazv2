@@ -18,8 +18,13 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Desinftec | Digital Architecture",
-  description: "Digital solutions and architectural software development.",
+  title: "Desinftec | Rəqəmsal Həllər",
+  description:
+    "Desinftec — Bakıda fəaliyyət göstərən, veb və mobil tətbiqlər, UI/UX prototipləşdirmə və brendinq üzrə ixtisaslaşan rəqəmsal həllər komandasıdır.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${satoshi.variable}`}>
+    <html lang="az" className={`${plusJakartaSans.variable} ${satoshi.variable}`}>
       <body className="antialiased">
         {children}
       </body>
