@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from '@vercel/analytics/next';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-pjs",
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="az" className={`${plusJakartaSans.variable} ${satoshi.variable}`}>
       <body className="antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
