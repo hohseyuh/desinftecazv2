@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         destination: 'https://drive.google.com/drive/folders/17TfpskOvoC72RQOdNqErDNqDaUDxMuw8',
         permanent: false,
       },
+      {
+        source: '/projects',
+        destination: '/#projects',
+        permanent: true,
+      },
     ]
   },
 };
